@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="aaa" method="post"> <!-- Ensure action attribute points to the correct URL -->
+        <input type="text" name="name1">
+        <input type="text" name="email1">
+        <input type="submit" value="click for submit">
+    </form>
+</body>
+</html>
