@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Servlet_Config_Context</display-name>
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>MyServlet</servlet-class>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc://localhost:3306/sanket_database</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>sanket123</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>welcome</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>context</display-name>
+    <servlet-name>context</servlet-name>
+    <servlet-class>context</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>context</servlet-name>
+    <url-pattern>/context</url-pattern>
+  </servlet-mapping>
+</web-app>
